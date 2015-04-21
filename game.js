@@ -1,4 +1,5 @@
 (function(){
+'use strict';
 
 /*  For those of you looking at my javascript trying to see how this works:
     This was made VERY QUICKLY with very little foresight or planning
@@ -63,7 +64,7 @@ function shuffle(array) {
 }
 
 
-Game = function(){
+window.Game = function(){
     $('#input_dialog').keypress(this.onKeypress(this));
     this.ciphertext = "";
     this.lockedLetters = [];
